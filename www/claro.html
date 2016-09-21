@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<title>Page Transitions with CSS3</title>
+		
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css' />
+	
+	</head>
+	<body>
+					
+		<!-- Home -->
+		<div id="homeClaro" class="panel">
+			<div class="content">	
+                <img id="logoCabecera" src="img/logo.png">			
+				<h1>Checklist Veolia</h1>	
+               				
+				<form action="#" method="post" name="MiFormulario">
+					<h2>Datos Base</h2>
+				
+					<label>Empresa</label>
+					<input id="FormData"type="text" name="nombre" value="Claro S.A">
+					<label>Fecha de visita</label>
+					<input id="FormData"type="date" name="FechaV">
+					<label>Corresponde a mes</label>
+					<input id="FormData"type="text" name="mes">
+					<label>Edificio</label>
+					<input id="FormData"type="text" name="Edificio">
+					<label>Direccion</label>
+					<input id="FormData"type="text" name="Direccion">
+					<label>Localidad</label>
+					<input id="FormData"type="text" name="Localidad">
+				
+				
+				</form>				  
+				  <a class="boton azul" id="link-about" href="claro.html">Anterior</a>
+				  <a class="boton azul" id="link-about" href="#portfolio">Siguiente</a>		
+			     
+			</div>
+		</div>
+		<!-- /Home -->
+		
+		<!-- Portfolio -->
+		<div id="portfolio" class="panel">
+			<div class="content">
+				<h2>1- Electricidad</h2>
+			    <form>  
+					<label>a- Carteles y marquesinas, funcionamiento de todas las luminarias,reemplazo de tubos o lampara incluido:</label><br>
+					<div class="caja">
+						<select name="Electricidad1" id="Electricidad1">
+							  <option value="0"></option>
+							  <option value="Excelente">Excelente</option>
+							  <option value="Muy Bien">Muy bueno</option>
+							  <option value="Bien">Bien</option>
+							  <option value="Mal">Mal</option>
+							  <option value="No Aplica">N/A</option>
+						</select>
+					</div>	
+					
+					<br>
+					<label>b- Funcionamiento, buen estado y limpieza de filtros lavables(Mensual):</label><br>
+					<div class="caja">
+						<select name="Electricidad2" id="Electricidad2">
+							  <option value="0"></option>
+							  <option value="Excelente">Excelente</option>
+							  <option value="Muy Bien">Muy bueno</option>
+							  <option value="Bien">Bien</option>
+							  <option value="Mal">Mal</option>
+							  <option value="No Aplica">N/A</option>
+						</select>
+					</div>
+					
+					<br>
+					<label>c- Funcionamiento, buen estado detomas electricos (reemplazo de ser necesario):</label><br>
+					<div class="caja">
+						<select name="Electricidad3" id="Electricidad3">
+							  <option value="0"></option>
+							  <option value="Excelente">Excelente</option>
+							  <option value="Muy Bien">Muy bueno</option>
+							  <option value="Bien">Bien</option>
+							  <option value="Mal">Mal</option>
+							  <option value="No Aplica">N/A</option>
+						</select>
+					</div>
+					
+					<br>			
+					<label>d- Funcionamiento, buen estado y limpieza de tableros de iluminacion y tomas (Mensual):</label><br>
+					<div class="caja">
+						<select name="Electricidad4" id="Electricidad4">
+							  <option value="0"></option>
+							  <option value="Excelente">Excelente</option>
+							  <option value="Muy Bien">Muy bueno</option>
+							  <option value="Bien">Bien</option>
+							  <option value="Mal">Mal</option>
+							  <option value="No Aplica">N/A</option>
+						</select>
+					</div>
+					
+					<br>			
+					<label>e- Entrega de termografia de tableros (Anual):</label><br>
+					<div class="caja">
+						<select name="Electricidad5" id="Electricidad5">
+							  <option value="0"></option>
+							  <option value="Excelente">Excelente</option>
+							  <option value="Muy Bien">Muy bueno</option>
+							  <option value="Bien">Bien</option>
+							  <option value="Mal">Mal</option>
+							  <option value="No Aplica">N/A</option>
+						</select>
+					</div>
+											
+					<br>	
+                    					
+				</form>
+		
+		
+				  
+			    <button class="boton azul" onclick="window.location.href='index.html#homeClaro'">Anterior</button>
+				<button class="boton azul" onclick="window.location.href='#contact'">Siguiente</button>			
+				
+			</div>
+		</div>
+		<!-- /Portfolio -->		
+		<!-- Contact -->
+		<div id="contact" class="panel">
+			<div class="content">
+				<canvas id="canvas" width="320" height="160" >
+				Get a better browser, bro.
+				</canvas><br>
+				<button onclick="clearCanvas()">Borrar</button><br><br>
+				
+				
+			   <!-- Incluimos archivo firma del canvas -->				
+				<script src="js/firma.js"></script>
+				<form action="#" method="post" name="MiFormulario3">
+					<label>Aclaracion De Firma</label>
+					<input id="FormData"type="text" name="Aclaracion">
+				</form>
+				  <br>
+				  <button class="boton rojo" id="link-about" onclick="Descargar()">Descarga Reporte</button><br><br>
+				
+				  <a class="boton azul" id="link-about" onclick="window.location.href='#portfolio'">Anterior</a>
+				
+			</div>
+		</div>
+		<!-- /Contact -->
+
+		<!-- Header with Navigation -->
+					
+		<div id="cuerpo">			
+		   <button class="boton azul" onclick="window.location.href='#homeClaro'">Claro</button>
+		</div>
+	</body>
+</html>

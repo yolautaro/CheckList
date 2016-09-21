@@ -1,0 +1,274 @@
+body{
+background-color: #000;
+}
+
+#cuerpo{
+width: 93%;
+height: 100%;
+background-color:#fff;
+}
+
+canvas {
+display: block;
+margin: 0 auto;
+margin-top:50px;
+margin: calc(50vh - 500px) auto 0);
+background: $canvas-bg;
+border-radius: 3px;
+box-shadow: 0px 0px 15px 3px #ccc;
+cursor:pointer;
+}
+
+p{
+text-align:center;
+cursor:pointer;
+}
+
+h2{
+background-color:#cecece;
+text-align:center;
+padding:5px;
+text-shadow: 1px 1px 3px #ccc;
+margin-top:-5px;
+}
+
+h3{
+
+}
+
+#logoCabecera{
+float:left;
+
+}
+
+
+
+/******************************/
+/*      pagina inicio         */
+/******************************/
+#logoIndex {
+    width: 130px;
+    height: 130px;    
+    position: relative;
+    -webkit-animation: myfirst 2s linear 2s infinite alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 2s linear 2s infinite alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {width: 130px;height: 130px;}
+    25%  {width: 140px;height: 140px;}
+    50%  {width: 145px;height: 145px;}
+    75%  {width: 140px;height: 140px;}
+    100% {width: 130px;height: 130px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {width: 130px;height: 130px;}
+    25%  {width: 140px;height: 140px;}
+    50%  {width: 145px;height: 145px;}
+    75%  {width: 140px;height: 140px;}
+    100% {width: 130px;height: 130px;}
+}
+
+#contenedorLogo{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+}
+
+#BotonLogo{
+position: absolute;
+left: 50%;
+top: 76%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+}
+/******************************/
+/*      pagina inicio         */
+/******************************/
+
+
+/***********************/			
+/* Formulario checkList*/
+/***********************/
+h1{
+height:55px;
+font-size: 28px;
+color: #fff;
+text-shadow: 1px 1px 3px #ccc;
+font-family: "Open Sans";
+border-bottom: 2px solid #FFF;
+text-align: center;
+margin: 0 0 5px 0;
+background-color:#000;
+padding-top:3px;
+}
+
+#logoCabecera{
+float:left;
+margin-left:15px;
+margin-top:3px;
+}
+		   
+	
+#form{
+width: 470px;
+height: auto;
+backgroud-image: url(aquí la ruta de la imagen de fondo);
+margin: 0 auto;
+padding: 0 1%;
+box-shadow: 5px 5px 0 #AAA;
+border-radius: 5px;
+}
+
+form p{
+background-color:#ccc;
+text-align:left;
+padding:3px 3px 3px 20px;
+}
+
+#FormData{
+width: 98%;
+height: 40px;
+font: 300 24px "Open Sans", Arial, sans-serif;
+margin: 5px 0 10px 0;
+border-color:#1F7BE5;
+}
+
+#CheckIzquierda{
+color:red;
+}
+
+input[type=submit]{
+background-color:#FF9900;
+height:50px;
+width:98%;
+//border:none;
+font-weight:400;
+letter-spacing:2px;
+color:#FFFFFF;
+}
+
+
+.caja {
+   margin:10px auto 10px  auto ;	
+   border:2px solid #1F7BE5;
+   height:30px;
+   overflow: hidden;
+   width: 100%;
+   position:relative;
+}
+select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 30px;
+   padding: 5px;
+   width: 100%;
+}
+select:focus{ outline: none;}
+
+.caja::after{
+	content:"\025be";
+	display:table-cell;
+	padding-top:7px;
+	text-align:center;
+	width:30px;
+	height:30px;
+	background-color:#1F7BE5;
+	position:absolute;
+	top:0;
+	right:0px;	
+	pointer-events: none;
+}
+
+/***********************/			
+/* Formulario checkList*/
+/***********************/
+
+/***********************/			
+/* Reporte del checkList*/
+/***********************/
+
+
+#H2Reporte{
+background-color:#000;
+color:#fff;
+font-size:16px;
+text-align:center;
+width:100%;
+}
+
+.boton{
+text-align:center;
+text-decoration: none;
+font-family: 'Helvetica Neue', Helvetica, sans-serif;
+display:inline-block;
+color: #FFF;
+background: #7F8C8D;
+padding: 15px 30px;
+white-space: nowrap;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+ margin: 10px 5px;
+-webkit-transition: all 0.1s ease-in-out;
+-ms-transition: all 0.1s ease-in-out;
+-moz-transition: all 0.1s ease-in-out;
+-o-transition: all 0.1s ease-in-out;
+transition: all 0.1s ease-in-out;
+}
+      
+.azul{
+background: #3498DB;
+}
+
+.rojo{
+background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+.panel{
+	width: 93%;
+	height: 98%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: absolute;	
+	margin-top: -150%;
+	margin-left:0px;
+	background-color: #fff;
+	border:solid;
+	border-color:#cecece;
+	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+	opacity: 0;
+	z-index:2;
+	-webkit-transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	-o-transition: opacity .3s ease-in-out;
+	-ms-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+}
+.panel:target{
+	opacity: 1;
+	margin-top: 0%;
+}
+#home:target ~ #header #navigation #link-home,
+#portfolio:target ~ #header #navigation #link-portfolio,
+#about:target ~ #header #navigation #link-about,
+#contact:target ~ #header #navigation #link-contact{
+	background: #000;
+	color: #fff;
+}
